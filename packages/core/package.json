@@ -1,0 +1,53 @@
+{
+  "name": "rosection",
+  "description": "astonishing Inversion of Control",
+  "version": "1.0.0",
+  "author": {
+    "name": "meslzy",
+    "email": "i@meslzy.com",
+    "url": "https://meslzy.com/"
+  },
+  "repository": "github:rosestack/rosection",
+  "bugs": "https://github.com/rosestack/rosection/issues",
+  "homepage": "https://rosestack.meslzy.com/rosection",
+  "type": "module",
+  "module": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "rosepack -w",
+    "build": "rosepack",
+    "test": "vitest",
+    "lint": "eslint source --ext .ts --fix"
+  },
+  "peerDependencies": {
+    "@rosection/utils": "1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@rosection/utils": {
+      "optional": false
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "rosestack",
+    "rosection"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "mit",
+  "dependencies": {
+    "tiny-typed-emitter": "^2.1.0",
+    "ts-mixer": "^6.0.3"
+  }
+}

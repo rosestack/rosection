@@ -1,0 +1,50 @@
+{
+  "name": "@rosection/class",
+  "description": "class helper for rosection",
+  "version": "1.0.0",
+  "author": {
+    "name": "meslzy",
+    "email": "i@meslzy.com",
+    "url": "https://meslzy.com/"
+  },
+  "repository": "github:rosestack/rosection",
+  "bugs": "https://github.com/rosestack/rosection/issues",
+  "homepage": "https://rosestack.meslzy.com/rosection",
+  "type": "module",
+  "module": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "rosepack -w",
+    "build": "rosepack",
+    "test": "vitest",
+    "lint": "eslint source --ext .ts --fix"
+  },
+  "peerDependencies": {
+    "rosection": "1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "rosection": {
+      "optional": false
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "rosestack",
+    "rosection",
+    "class"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "mit"
+}

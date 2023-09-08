@@ -1,0 +1,12 @@
+{
+  "name": "basic",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "rosepack && node ."
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "rosection": "file:../../packages/rosection"
+  }
+}

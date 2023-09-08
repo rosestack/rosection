@@ -1,0 +1,30 @@
+{
+  "name": "rosection",
+  "type": "module",
+  "scripts": {
+    "dev": "roserepo run dev",
+    "build": "roserepo run build",
+    "test": "roserepo run test",
+    "lint": "roserepo run lint",
+    "publish": "roserepo publish",
+    "chanegset": "roserepo changeset",
+    "upgrade": "roserepo upgrade"
+  },
+  "dependencies": {
+    "@rosestack/components": "^1.0.3"
+  },
+  "devDependencies": {
+    "@meslzy/eslint-config": "^0.5.6",
+    "@meslzy/tsconfig": "^0.2.2",
+    "eslint": "^8.47.0",
+    "rosepack": "^1.0.3",
+    "roserepo": "^1.0.10",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "plugins/*"
+  ],
+  "private": true
+}
