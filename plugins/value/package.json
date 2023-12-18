@@ -1,0 +1,53 @@
+{
+  "name": "@rosection/value",
+  "description": "value plugin for rosection",
+  "version": "1.0.0",
+  "author": {
+    "name": "meslzy",
+    "email": "i@meslzy.com",
+    "url": "https://meslzy.com/"
+  },
+  "repository": "github:rosestack/rosection",
+  "bugs": "https://github.com/rosestack/rosection/issues",
+  "homepage": "https://rosestack.meslzy.com/rosection",
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs",
+      "types": "./dist/main.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "rosepack -w",
+    "build": "rosepack",
+    "test": "vitest",
+    "lint": "eslint source --ext .ts --fix"
+  },
+  "peerDependencies": {
+    "rosection": "1.0.0",
+    "@rosection/utils": "1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "rosection": {
+      "optional": false
+    },
+    "@rosection/utils": {
+      "optional": false
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "rosestack",
+    "rosection",
+    "class"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "mit"
+}

@@ -1,0 +1,24 @@
+{
+  "extends": "@meslzy/tsconfig",
+  "compilerOptions": {
+    "rootDir": "source",
+    "outDir": "dist",
+    //,
+    "baseUrl": "source",
+    "paths": {
+      "~/*": [
+        "./*"
+      ]
+    },
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false
+  },
+  "include": [
+    "source",
+    "types.d.ts"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}

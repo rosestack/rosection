@@ -1,0 +1,28 @@
+{
+  "shortDescription": "Astonishing Inversion of Control",
+  "longDescription": "Rosection is a lightweight, fast and astonishing inversion of control container. It is a framework for dependency injection, component lifecycle management and more.",
+  "features": [
+  ],
+  "action": {
+    "primary": {
+      "name": "Getting Started",
+      "url": "getting-started"
+    },
+    "secondary": {
+      "name": "Introduction",
+      "url": "introduction"
+    }
+  },
+  "navbar": [
+  ],
+  "sidebar": [
+    {
+      "name": "Introduction",
+      "url": "introduction"
+    },
+    {
+      "name": "Getting Started",
+      "url": "getting-started"
+    }
+  ]
+}
